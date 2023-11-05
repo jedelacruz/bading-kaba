@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+h1{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    text-align: center;
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#yesBtn{
+    top: 50%;
+    right: 40%;
+    transform: translate(-50%,-40%);
+    background-color: darkturquoise;
+}
+
+#noBtn{
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-40%);
+    background-color: crimson;
+    color: white;
+}
+
+.iKnewIt{
+    width: 300px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(20, 20, 30, 0.9)), url('flag.png');
+    background-size: 100% 100%;
+    position: absolute;
+    display: none;
+    padding: 10px;
+}
+
+.iKnewIt i{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.displayText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 100%;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #yesBtn{
+        top: 50%;
+        right: 20%;
+        transform: translate(-50%,-20%);
+        background-color: darkturquoise;
+    }
+    
+    #noBtn{
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%,-20%);
+        background-color: crimson;
+        color: white;
+    }
+    
+}
